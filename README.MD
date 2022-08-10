@@ -1,5 +1,5 @@
-# <PROJECT-TITLE>
-<PROJECT-DESCRIPTION>
+# <THEME-TITLE>
+<THEME-DESCRIPTION>
 
 __Contributors:__ mdibella-dev
 

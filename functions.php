@@ -2,10 +2,12 @@
 /**
  * The theme's core file.
  *
- * @author  Marco Di Bella <mdb@marcodibella.de>
+ * @author  Marco Di Bella
  * @package <PACKAGE-NAME>
  */
 
+
+/** Prevent direct access */
 
 defined( 'ABSPATH' ) or exit;
 
@@ -17,6 +19,6 @@ error_reporting( E_ALL ^ E_NOTICE );
 
 
 
-/** Include function library */
+/** Include files */
 
 require_once( get_template_directory() . '/includes/setup.php' );
