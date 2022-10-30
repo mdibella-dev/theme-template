@@ -2,8 +2,8 @@
 /**
  * Additional setup for the block patterns.
  *
- * @author  Marco Di Bella
- * @package <THEME-PACKAGE>
+ * @author   Marco Di Bella
+ * @package  <THEME-PACKAGE>
  */
 
 
@@ -16,7 +16,7 @@ defined( 'ABSPATH' ) or exit;
 /**
  * Registers block patterns and categories.
  *
- * @since 1.0.0
+ * @since  1.0.0
  */
 
 function mdb_register_block_patterns()
