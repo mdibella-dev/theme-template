@@ -5,9 +5,9 @@ __Contributors:__ mdibella-dev
 
 __Tags:__ gutenberg, block-editor, full-site-editing, translation-ready, responsive,
 
-__Requires at least:__ WordPress X.X  
+__Requires at least:__ WordPress <WORDPRESS-MINIMUM-VERSION>  
 
-__Tested up to:__ WordPress X.X  
+__Tested up to:__ WordPress <WORDPRESS-VERSION>  
 
 ## Changelog
 *Added/Changed/Fixed/Removed*
