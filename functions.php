@@ -2,8 +2,8 @@
 /**
  * The theme's core file.
  *
- * @author  Marco Di Bella
- * @package <THEME-PACKAGE>
+ * @author   Marco Di Bella
+ * @package  <THEME-PACKAGE>
  */
 
 
@@ -17,6 +17,11 @@ defined( 'ABSPATH' ) or exit;
 
 error_reporting( E_ALL ^ E_NOTICE );
 
+
+
+/** Variables and definitions **/
+
+$theme_version = '1.0.0';          // eg. 1.0.0
 
 
 /** Include files */
