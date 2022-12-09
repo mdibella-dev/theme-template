@@ -20,6 +20,7 @@ error_reporting( E_ALL ^ E_NOTICE );
 
 
 /** Variables and definitions **/
+
 const THEME_VERSION = '<THEME-VERSION>';
 const THEME_DOMAIN  = '<THEME-TEXTDOMAIN>';
 
