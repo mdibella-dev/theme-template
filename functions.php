@@ -20,8 +20,8 @@ error_reporting( E_ALL ^ E_NOTICE );
 
 
 /** Variables and definitions **/
-
-$theme_version = '1.0.0';          // eg. 1.0.0
+const THEME_VERSION = '<THEME-VERSION>';
+const THEME_DOMAIN  = '<THEME-TEXTDOMAIN>';
 
 
 /** Include files */
