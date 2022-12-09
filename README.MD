@@ -10,6 +10,6 @@ __Requires at least:__ WordPress <WORDPRESS-MINIMUM-VERSION>
 __Tested up to:__ WordPress <WORDPRESS-VERSION>  
 
 ## Changelog
-*Added/Changed/Fixed/Removed*
+*New/Improve/Bugfix*
 
 ### main
