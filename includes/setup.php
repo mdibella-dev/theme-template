@@ -6,6 +6,8 @@
  * @package <THEME-PACKAGE>
  */
 
+namespace THEME_NAMESPACE;
+
 
 /** Prevent direct access */
 
@@ -13,7 +15,7 @@ defined( 'ABSPATH' ) or exit;
 
 
 
-if( ! function_exists( 'mdb_after_setup_theme' ) ) :
+if( ! function_exists( 'theme_after_setup_theme' ) ) :
 
     /**
      * Performs basic settings for the theme.
@@ -21,7 +23,7 @@ if( ! function_exists( 'mdb_after_setup_theme' ) ) :
      * @since  1.0.0
      */
 
-     function mdb_after_setup_theme()
+     function theme__after_setup_theme()
      {
         // Enables internationalization.
         load_theme_textdomain( THEME_DOMAIN, get_template_directory() . '/languages' );
@@ -40,7 +42,7 @@ if( ! function_exists( 'mdb_after_setup_theme' ) ) :
         add_editor_style( 'assets/build/css/style-editor.min.css' );        // change path/name if necessary
     }
 
-    add_action( 'after_setup_theme', 'mdb_after_setup_theme' );
+    add_action( 'after_setup_theme', 'THEME_NAMESPACE\theme_after_setup_theme' );
 
 endif;
 
@@ -52,7 +54,7 @@ endif;
  * @since  1.0.0
  */
 
-function mdb_enqueue_scripts()
+function theme_enqueue_scripts()
 {
     /**
      * Registers and loads the theme's own styles and scripts.
@@ -78,4 +80,4 @@ function mdb_enqueue_scripts()
     );
 }
 
-add_action( 'wp_enqueue_scripts', 'mdb_enqueue_scripts', 9999 );
+add_action( 'wp_enqueue_scripts', 'THEME_NAMESPACE\theme_enqueue_scripts', 9999 );

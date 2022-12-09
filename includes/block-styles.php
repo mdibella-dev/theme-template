@@ -6,6 +6,8 @@
  * @package <THEME-PACKAGE>
  */
 
+namespace THEME_NAMESPACE;
+
 
 /** Prevent direct access */
 
@@ -19,7 +21,7 @@ defined( 'ABSPATH' ) or exit;
  * @since 1.0.0
  */
 
-function mdb_register_block_styles()
+function theme_register_block_styles()
 {
     wp_enqueue_script(
         '<THEME-PREFIX>-block-styles',
@@ -30,4 +32,4 @@ function mdb_register_block_styles()
     );
 }
 
-add_action( 'enqueue_block_editor_assets', 'mdb_register_block_styles' );
+add_action( 'enqueue_block_editor_assets', 'THEME_NAMESPACE\theme_register_block_styles' );

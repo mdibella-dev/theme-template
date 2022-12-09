@@ -6,6 +6,8 @@
  * @package  <THEME-PACKAGE>
  */
 
+namespace THEME_NAMESPACE;
+
 
 /** Prevent direct access */
 
@@ -19,7 +21,7 @@ defined( 'ABSPATH' ) or exit;
  * @since  1.0.0
  */
 
-function mdb_register_block_patterns()
+function theme_register_block_patterns()
 {
     /**
      * Filters the theme block pattern categories.
@@ -61,4 +63,4 @@ function mdb_register_block_patterns()
     endforeach;
 }
 
-add_action( 'init', 'mdb_register_block_patterns', 9 );
+add_action( 'init', 'THEME_NAMESPACE\theme_register_block_patterns', 9 );

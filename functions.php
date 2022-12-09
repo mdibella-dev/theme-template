@@ -6,6 +6,8 @@
  * @package  <THEME-PACKAGE>
  */
 
+namespace THEME_NAMESPACE;
+
 
 /** Prevent direct access */
 
@@ -16,7 +18,6 @@ defined( 'ABSPATH' ) or exit;
 /** Turn off notices */
 
 error_reporting( E_ALL ^ E_NOTICE );
-
 
 
 /** Variables and definitions **/
