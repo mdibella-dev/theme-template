@@ -20,14 +20,17 @@ defined( 'ABSPATH' ) or exit;
 error_reporting( E_ALL ^ E_NOTICE );
 
 
+
 /** Variables and definitions **/
 
-const THEME_VERSION = '<THEME-VERSION>';
-const THEME_DOMAIN  = '<THEME-TEXTDOMAIN>';
+define( 'THEME_VERSION', '<THEME-VERSION>' );           // The theme's version
+define( 'THEME_DOMAIN', '<THEME-TEXTDOMAIN>' );         // The theme's text domain
+define( 'THEME_DIR', get_template_directory() );        // The theme's directory
+
 
 
 /** Include files */
 
-require_once( get_template_directory() . '/includes/setup.php' );
-require_once( get_template_directory() . '/includes/block-patterns.php' );
-require_once( get_template_directory() . '/includes/block-styles.php' );
+require_once( THEME_DIR . '/includes/setup.php' );
+require_once( THEME_DIR . '/includes/block-patterns.php' );
+require_once( THEME_DIR . '/includes/block-styles.php' );
