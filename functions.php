@@ -24,7 +24,6 @@ error_reporting( E_ALL ^ E_NOTICE );
 /** Variables and definitions **/
 
 define( __NAMESPACE__ . "THEME_VERSION", '<THEME-VERSION>' );       // The theme's version
-define( __NAMESPACE__ . "THEME_DOMAIN", '<THEME-TEXTDOMAIN>' );     // The theme's text domain
 define( __NAMESPACE__ . "THEME_DIR", get_template_directory() );    // The theme's directory
 
 
