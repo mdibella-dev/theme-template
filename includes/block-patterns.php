@@ -2,8 +2,8 @@
 /**
  * Additional setup for the block patterns.
  *
- * @author   Marco Di Bella
- * @package  <THEME-PACKAGE>
+ * @author  Marco Di Bella
+ * @package <THEME-PACKAGE>
  */
 
 namespace THEME_NAMESPACE;

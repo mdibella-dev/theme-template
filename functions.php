@@ -2,8 +2,8 @@
 /**
  * The theme's core file.
  *
- * @author   Marco Di Bella
- * @package  <THEME-PACKAGE>
+ * @author  Marco Di Bella
+ * @package <THEME-PACKAGE>
  */
 
 namespace THEME_NAMESPACE;
