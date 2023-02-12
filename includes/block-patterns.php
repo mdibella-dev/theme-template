@@ -21,7 +21,7 @@ defined( 'ABSPATH' ) or exit;
  * @since  1.0.0
  */
 
-function theme_register_block_patterns()
+function register_block_patterns()
 {
     /**
      * Filters the theme block pattern categories.
@@ -63,4 +63,4 @@ function theme_register_block_patterns()
     endforeach;
 }
 
-add_action( 'init', 'THEME_NAMESPACE\theme_register_block_patterns', 9 );
+add_action( 'init', 'THEME_NAMESPACE\register_block_patterns', 9 );

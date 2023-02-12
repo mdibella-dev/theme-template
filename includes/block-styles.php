@@ -21,7 +21,7 @@ defined( 'ABSPATH' ) or exit;
  * @since 1.0.0
  */
 
-function theme_register_block_styles()
+function register_block_styles()
 {
     wp_enqueue_script(
         '<THEME-PREFIX>-block-styles',
@@ -32,4 +32,4 @@ function theme_register_block_styles()
     );
 }
 
-add_action( 'enqueue_block_editor_assets', 'THEME_NAMESPACE\theme_register_block_styles' );
+add_action( 'enqueue_block_editor_assets', 'THEME_NAMESPACE\register_block_styles' );

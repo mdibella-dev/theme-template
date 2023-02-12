@@ -15,36 +15,32 @@ defined( 'ABSPATH' ) or exit;
 
 
 
-if( ! function_exists( 'theme_after_setup_theme' ) ) :
+/**
+ * Performs basic settings for the theme.
+ *
+ * @since  1.0.0
+ */
 
-    /**
-     * Performs basic settings for the theme.
-     *
-     * @since  1.0.0
-     */
-
-     function theme__after_setup_theme()
-     {
-        // Enables internationalization.
-        load_theme_textdomain( '<THEME-TEXTDOMAIN>', THEME_URI . 'languages' );
+ function theme_setup()
+ {
+    // Enables internationalization.
+    load_theme_textdomain( '<THEME-TEXTDOMAIN>', THEME_URI . 'languages' );
 
 
-        // Adds 'wide' support for the block editor (Gutenberg).
-        add_theme_support( 'align-wide' );
+    // Adds 'wide' support for the block editor (Gutenberg).
+    add_theme_support( 'align-wide' );
 
 
-        // Enables responsive embedding of media embeds.
-        add_theme_support( 'responsive-embeds' );
+    // Enables responsive embedding of media embeds.
+    add_theme_support( 'responsive-embeds' );
 
 
-        // Adds editor styles.
-        add_theme_support( 'editor-styles' );
-        add_editor_style( 'assets/build/css/style-editor.min.css' );        // change path/name if necessary
-    }
+    // Adds editor styles.
+    add_theme_support( 'editor-styles' );
+    add_editor_style( 'assets/build/css/style-editor.min.css' );        // change path/name if necessary
+}
 
-    add_action( 'after_setup_theme', 'THEME_NAMESPACE\theme_after_setup_theme' );
-
-endif;
+add_action( 'after_setup_theme', 'THEME_NAMESPACE\theme_setup' );
 
 
 
@@ -54,7 +50,7 @@ endif;
  * @since  1.0.0
  */
 
-function theme_enqueue_scripts()
+function enqueue_theme_scripts()
 {
     /**
      * Registers and loads the theme's own styles and scripts.
@@ -80,4 +76,4 @@ function theme_enqueue_scripts()
     );
 }
 
-add_action( 'wp_enqueue_scripts', 'THEME_NAMESPACE\theme_enqueue_scripts', 9999 );
+add_action( 'wp_enqueue_scripts', 'THEME_NAMESPACE\enqueue_theme_scripts', 9999 );
