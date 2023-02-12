@@ -65,7 +65,7 @@ function theme_enqueue_scripts()
 
     wp_enqueue_style(
         'mdb-frontend-style',
-        THEME_DIR . '/assets/build/css/style-frontend.min.css',  // change path/name if necessary
+        THEME_DIR . 'assets/build/css/style-frontend.min.css',  // change path/name if necessary
         array(),
         THEME_VERSION
     );
@@ -73,7 +73,7 @@ function theme_enqueue_scripts()
 
     wp_enqueue_script(
         'mdb-frontend-script',
-        THEME_DIR . '/assets/build/js/frontend.min.js',          // change path/name if necessary
+        THEME_DIR . 'assets/build/js/frontend.min.js',          // change path/name if necessary
         array( 'jquery' ),
         THEME_VERSION,
         true
