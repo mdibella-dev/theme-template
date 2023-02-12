@@ -54,7 +54,7 @@ function theme_register_block_patterns()
     );
 
     foreach( $block_patterns as $block_pattern ) :
-        $pattern_file = get_theme_file_path( '/includes/patterns/' . $block_pattern . '.php' );
+        $pattern_file = THEME_DIR . 'includes/patterns/' . $block_pattern . '.php';
 
         register_block_pattern(
             '<THEME-PREFIX>' . '/' . $block_pattern,

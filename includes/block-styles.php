@@ -25,7 +25,7 @@ function theme_register_block_styles()
 {
     wp_enqueue_script(
         '<THEME-PREFIX>-block-styles',
-        get_template_directory_uri() . '/assets/src/js/block-styles.js',    // maybe add a 'build' version?
+        THEME_URI . 'assets/src/js/block-styles.js',    // maybe add a 'build' version?
         array( 'wp-blocks', 'wp-dom-ready', 'wp-edit-post' ),
         THEME_VERSION,
         true
