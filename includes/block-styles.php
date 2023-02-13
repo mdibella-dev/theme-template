@@ -3,10 +3,10 @@
  * Additional setup for the block styles.
  *
  * @author  Marco Di Bella
- * @package <THEME-PACKAGE>
+ * @package ph_THEME-PACKAGE
  */
 
-namespace THEME_NAMESPACE;
+namespace ph_THEME_NAMESPACE;
 
 
 /** Prevent direct access */
@@ -24,12 +24,15 @@ defined( 'ABSPATH' ) or exit;
 function register_block_styles()
 {
     wp_enqueue_script(
-        '<THEME-PREFIX>-block-styles',
+        'ph_THEME-PREFIX-block-styles',
         THEME_URI . 'assets/src/js/block-styles.js',    // maybe add a 'build' version?
-        array( 'wp-blocks', 'wp-dom-ready', 'wp-edit-post' ),
-        THEME_VERSION,
-        true
+        array(
+            'wp-blocks',
+            'wp-dom-ready',
+            'wp-edit-post'
+        ),
+        THEME_VERSION
     );
 }
 
-add_action( 'enqueue_block_editor_assets', 'THEME_NAMESPACE\register_block_styles' );
+add_action( 'enqueue_block_editor_assets', 'ph_THEME_NAMESPACE\register_block_styles' );

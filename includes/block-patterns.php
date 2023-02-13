@@ -3,10 +3,10 @@
  * Additional setup for the block patterns.
  *
  * @author  Marco Di Bella
- * @package <THEME-PACKAGE>
+ * @package ph_THEME-PACKAGE
  */
 
-namespace THEME_NAMESPACE;
+namespace ph_THEME_NAMESPACE;
 
 
 /** Prevent direct access */
@@ -57,10 +57,10 @@ function register_block_patterns()
         $pattern_file = THEME_DIR . 'includes/patterns/' . $block_pattern . '.php';
 
         register_block_pattern(
-            '<THEME-PREFIX>' . '/' . $block_pattern,
+            'ph_THEME-PREFIX' . '/' . $block_pattern,
             require $pattern_file
         );
     endforeach;
 }
 
-add_action( 'init', 'THEME_NAMESPACE\register_block_patterns', 9 );
+add_action( 'init', 'ph_THEME_NAMESPACE\register_block_patterns', 9 );

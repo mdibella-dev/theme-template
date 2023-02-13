@@ -3,10 +3,10 @@
  * The theme's core file.
  *
  * @author  Marco Di Bella
- * @package <THEME-PACKAGE>
+ * @package ph_THEME-PACKAGE
  */
 
-namespace THEME_NAMESPACE;
+namespace ph_THEME_NAMESPACE;
 
 
 /** Prevent direct access */

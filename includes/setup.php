@@ -3,10 +3,10 @@
  * Main functions for setting up the theme.
  *
  * @author  Marco Di Bella
- * @package <THEME-PACKAGE>
+ * @package ph_THEME-PACKAGE
  */
 
-namespace THEME_NAMESPACE;
+namespace ph_THEME_NAMESPACE;
 
 
 /** Prevent direct access */
@@ -24,7 +24,7 @@ defined( 'ABSPATH' ) or exit;
  function theme_setup()
  {
     // Enables internationalization.
-    load_theme_textdomain( '<THEME-TEXTDOMAIN>', THEME_URI . 'languages' );
+    load_theme_textdomain( 'ph_THEME-TEXTDOMAIN', THEME_URI . 'languages' );
 
 
     // Adds 'wide' support for the block editor (Gutenberg).
@@ -40,7 +40,7 @@ defined( 'ABSPATH' ) or exit;
     add_editor_style( 'assets/build/css/style-editor.min.css' );        // change path/name if necessary
 }
 
-add_action( 'after_setup_theme', 'THEME_NAMESPACE\theme_setup' );
+add_action( 'after_setup_theme', 'ph_THEME_NAMESPACE\theme_setup' );
 
 
 
@@ -60,7 +60,7 @@ function enqueue_theme_scripts()
      */
 
     wp_enqueue_style(
-        'mdb-frontend-style',
+        'ph_THEME-PREFIX-frontend-style',
         THEME_URI . 'assets/build/css/style-frontend.min.css',  // change path/name if necessary
         array(),
         THEME_VERSION
@@ -68,12 +68,14 @@ function enqueue_theme_scripts()
 
 
     wp_enqueue_script(
-        'mdb-frontend-script',
+        'ph_THEME-PREFIX-frontend-script',
         THEME_URI . 'assets/build/js/frontend.min.js',          // change path/name if necessary
-        array( 'jquery' ),
+        array(
+            'jquery'
+        ),
         THEME_VERSION,
         true
     );
 }
 
-add_action( 'wp_enqueue_scripts', 'THEME_NAMESPACE\enqueue_theme_scripts', 9999 );
+add_action( 'wp_enqueue_scripts', 'ph_THEME_NAMESPACE\enqueue_theme_scripts', 9999 );
