@@ -28,11 +28,11 @@ function register_block_patterns()
      */
 
     $block_pattern_categories = array(
-        'featured' => array( 'label' => __( 'Featured', 'mdb' ) ),
-        'footer'   => array( 'label' => __( 'Footers', 'mdb' ) ),
-        'header'   => array( 'label' => __( 'Headers', 'mdb' ) ),
-        'query'    => array( 'label' => __( 'Query', 'mdb' ) ),
-        'pages'    => array( 'label' => __( 'Pages', 'mdb' ) ),
+        'featured' => array( 'label' => __( 'Featured', 'ph_THEME-TEXTDOMAIN' ) ),
+        'footer'   => array( 'label' => __( 'Footers', 'ph_THEME-TEXTDOMAIN' ) ),
+        'header'   => array( 'label' => __( 'Headers', 'ph_THEME-TEXTDOMAIN' ) ),
+        'query'    => array( 'label' => __( 'Query', 'ph_THEME-TEXTDOMAIN' ) ),
+        'pages'    => array( 'label' => __( 'Pages', 'ph_THEME-TEXTDOMAIN' ) ),
     );
 
     foreach( $block_pattern_categories as $name => $properties ) :
