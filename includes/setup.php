@@ -24,7 +24,7 @@ defined( 'ABSPATH' ) or exit;
  function theme_setup()
  {
     // Enables internationalization.
-    load_theme_textdomain( 'ph_THEME-TEXTDOMAIN', THEME_URI . 'languages' );
+    load_theme_textdomain( 'ph_THEME-TEXTDOMAIN', THEME_DIR . 'languages' );
 
 
     // Adds 'wide' support for the block editor (Gutenberg).
