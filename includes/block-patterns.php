@@ -63,4 +63,4 @@ function register_block_patterns()
     endforeach;
 }
 
-add_action( 'init', 'ph_THEME_NAMESPACE\register_block_patterns', 9 );
+add_action( 'init', __NAMESPACE__ . '\register_block_patterns', 9 );

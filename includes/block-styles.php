@@ -35,4 +35,4 @@ function register_block_styles()
     );
 }
 
-add_action( 'enqueue_block_editor_assets', 'ph_THEME_NAMESPACE\register_block_styles' );
+add_action( 'enqueue_block_editor_assets', __NAMESPACE__ . '\register_block_styles' );
