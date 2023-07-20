@@ -62,7 +62,7 @@ function theme_scripts()
     wp_enqueue_style(
         'ph_THEME-PREFIX-frontend-style',
         THEME_URI . 'assets/build/css/style-frontend.min.css',  // change path/name if necessary
-        array(),
+        [],
         THEME_VERSION
     );
 
@@ -70,9 +70,9 @@ function theme_scripts()
     wp_enqueue_script(
         'ph_THEME-PREFIX-frontend-script',
         THEME_URI . 'assets/build/js/frontend.min.js',          // change path/name if necessary
-        array(
-            'jquery'
-        ),
+        [
+            'jquery'                                            // remove if not used
+        ],
         THEME_VERSION,
         true
     );
