@@ -21,8 +21,7 @@ defined( 'ABSPATH' ) or exit;
  * @since  1.0.0
  */
 
-function register_block_patterns()
-{
+function register_block_patterns() {
     /**
      * Filters the theme block pattern categories.
      */
@@ -40,19 +39,19 @@ function register_block_patterns()
         'query' => [
             'label' => __( 'Query', 'ph_THEME-TEXTDOMAIN' )
         ],
-        'pages' => [ 
+        'pages' => [
             'label' => __( 'Pages', 'ph_THEME-TEXTDOMAIN' )
         ],
     ];
 
-    foreach( $block_pattern_categories as $name => $properties ) :
-        if( ! WP_Block_Pattern_Categories_Registry::get_instance()->is_registered( $name ) ) :
+    foreach ( $block_pattern_categories as $name => $properties ) {
+        if ( ! WP_Block_Pattern_Categories_Registry::get_instance()->is_registered( $name ) ) {
             register_block_pattern_category(
                 $name,
                 $properties
             );
-        endif;
-    endforeach;
+        }
+    }
 
 
     /**
@@ -63,14 +62,14 @@ function register_block_patterns()
         // add here (STRING), (STRING), ....
     );
 
-    foreach( $block_patterns as $block_pattern ) :
+    foreach ( $block_patterns as $block_pattern ) {
         $pattern_file = THEME_DIR . 'includes/patterns/' . $block_pattern . '.php';
 
         register_block_pattern(
             'ph_THEME-PREFIX' . '/' . $block_pattern,
             require $pattern_file
         );
-    endforeach;
+    }
 }
 
 add_action( 'init', __NAMESPACE__ . '\register_block_patterns', 9 );

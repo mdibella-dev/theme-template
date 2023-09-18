@@ -21,8 +21,7 @@ defined( 'ABSPATH' ) or exit;
  * @since 1.0.0
  */
 
-function register_block_styles()
-{
+function register_block_styles() {
     wp_enqueue_script(
         'ph_THEME-PREFIX-block-styles',
         THEME_URI . 'assets/src/js/block-styles.js',    // maybe add a 'build' version?
