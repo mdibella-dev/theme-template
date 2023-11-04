@@ -36,7 +36,7 @@ function theme_setup() {
 
     // Adds editor styles.
     add_theme_support( 'editor-styles' );
-    add_editor_style( 'assets/build/css/style-editor.min.css' );        // change path/name if necessary
+    add_editor_style( 'assets/build/css/style-frontend.min.css' );        // change path/name if necessary
 }
 
 add_action( 'after_setup_theme', __NAMESPACE__ . '\theme_setup' );
