@@ -62,14 +62,20 @@ function register_block_patterns() {
         // add here (STRING), (STRING), ....
     );
 
-    foreach ( $block_patterns as $block_pattern ) {
-        $pattern_file = THEME_DIR . 'includes/patterns/' . $block_pattern . '.php';
+    try {
 
-        register_block_pattern(
-            'ph_THEME-PREFIX' . '/' . $block_pattern,
-            require $pattern_file
-        );
-    }
+        foreach ( $block_patterns as $block_pattern ) {
+            $pattern_file = THEME_DIR . 'includes/patterns/' . $block_pattern . '.php';
+
+            register_block_pattern(
+                'ph_THEME-PREFIX' . '/' . $block_pattern,
+                require $pattern_file
+            );
+        }
+
+    } catch ( Exception ) {
+        // do nothing!
+    }    
 }
 
 add_action( 'init', __NAMESPACE__ . '\register_block_patterns', 9 );
