@@ -23,11 +23,6 @@ gutenberg, block-editor, full-site-editing, translation-ready, responsive
 
 ## Changelog
 
-### Latest changes to the main branch
-
-
-### Previous changes
-
 See [CHANGELOG.md](https://github.com/mdibella-dev/theme-template/blob/main/CHANGELOG.md).
 
 <br>
